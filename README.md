@@ -26,7 +26,11 @@ You can consult the information about the selected CHART in this link
     helm repo add prometheus-community https://prometheus-community.github.io/helm-charts
   
     helm repo update
-  
+    
+## Create the environment:
+
+    kubectl create ns monitoring-metrics
+    
 ## Custom the configuration file. 
   
 At this point, you can customize the configuration file. To enable persistent volumes and other required settings
